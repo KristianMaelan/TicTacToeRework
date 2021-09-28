@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 #include <stdlib.h>
+
 //Function declarations
 void playerBoardPrint();	//Only used for printing gameboard.
 bool winConfirm();			//Checks if there is a game win.
@@ -17,7 +18,7 @@ char player2 = 'O';					//Player 2 game piece
 char replaygame = 'y';				//For looping the game
 char playerinput{};					//Player input collection
 
-//playerboard setup, using 2d array for easier looping and no need to minimize memory use. DEKLARER I MAIN FOR RESET
+//playerboard setup, using 2d array for easier looping and no need to minimize memory use.
 char playerboard[3][3] = {
 	{'1', '2', '3'},
 	{'4', '5', '6'},
@@ -41,8 +42,7 @@ int main() {
 }
 
 void playerBoardPrint() {
-	for (int i = 0; i < 3; i++)
-	{
+	for (int i = 0; i < 3; i++){
 		std::cout << std::endl;
 		std::cout << "\t\t\t\t  -----------------------";
 		std::cout << std::endl;
